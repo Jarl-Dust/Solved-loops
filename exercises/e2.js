@@ -4,7 +4,16 @@
 
 export function getNumbersWithSquareRoots(max) {
   // Your code goes here...
-
+let numbers = [];
+for (let i = 0; i <= max; i++) {
+  for (let j = 0; j <= Math.sqrt(i); j++){
+    if (j * j === i){
+      numbers.push(i);
+      break;
+    }
+  }
+}
+return numbers;
 }
 
 // === TEST YOURSELF ===
