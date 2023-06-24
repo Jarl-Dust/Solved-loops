@@ -3,7 +3,7 @@
 The **flat()** creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
 
 ```JS
-const arr1 = [0, 1, 2, [3, 4]];
+const arr1 = [1, 0, 2, [3, 4]];
 console.log(arr1.flat());
 // expected output: Array [0, 1, 2, 3, 4]
 
@@ -18,4 +18,4 @@ a flattenArray() function should
 • Return a single array of arguments' arrays values
 
 ### Learn more
-[Array flat() docs[(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat)
+[Array flat() docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat)

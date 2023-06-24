@@ -1,15 +1,14 @@
-
 // EXERCISE 1
 // Return an array of numbers in 1..10
 // getFirstTenNumbers() => [1, 2, 3, ... , 10]
 
 export function getFirstTenNumbers() {
   // Your code goes here...
-const numbers = [];
-for (let i = 1; i <= 10; i++) {
-  numbers.push(i);
+  const numbers = [];
+  for (let i = 1; i <= 10; i++) {
+    numbers.push(i);
   }
-return numbers;
+  return numbers;
 }
 
 // === TEST YOURSELF ===

@@ -1,16 +1,27 @@
-
 // EXERCISE 16
 // Please, read the exercise-info/flat.md to get the initial data of what is the expected result of this exercise.
 // Array example: flatArraysData in /data/data.js
 // flatArrays([['d', 'r'], 'z', 'b', ['f', 'y']]) => ['d', 'r', 'z', 'b', 'f', 'y']
 // NOTE: You can NOT use the array.flat() method in your code
 
-export function flatArrays(array) {
+export function flatArrays(arr) {
   // Your code goes here...
+  const flattened = [];
 
+  for (let i = 0; i < arr.length; i++) {
+    const currentItem = arr[i];
+
+    if (Array.isArray(currentItem)) {
+      for (let j = 0; j < currentItem.length; j++) {
+        flattened.push(currentItem[j]);
+      }
+    } else {
+      flattened.push(currentItem);
+    }
+  }
+
+  return flattened;
 }
-
-
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-16"

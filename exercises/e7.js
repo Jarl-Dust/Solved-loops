@@ -12,7 +12,10 @@ export function getClientWithLeastPositiveBalance(bankAccounts) {
     var account = bankAccounts[i];
 
     if (account.balance > 0) {
-      if (minBalanceAccount === null || account.balance < minBalanceAccount.balance) {
+      if (
+        minBalanceAccount === null ||
+        account.balance < minBalanceAccount.balance
+      ) {
         minBalanceAccount = account;
       }
     }
